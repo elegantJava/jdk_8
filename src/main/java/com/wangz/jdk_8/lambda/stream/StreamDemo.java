@@ -1,6 +1,5 @@
 package com.wangz.jdk_8.lambda.stream;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
@@ -10,7 +9,7 @@ import java.util.stream.Collectors;
  * @ClassName StreamDemo
  * @Auther: wz1016_vip@163.com
  * @Date: 2019/6/17 23:50
- * @Description: TODO
+ * @Description: TODO stream
  */
 public class StreamDemo {
     /*
@@ -36,6 +35,9 @@ public class StreamDemo {
      * parallelStream() − 为集合创建并行流。
      */
 
+    // ================================================
+    //                         方法
+    // ================================================
 
 
     public static void main(String[] args) {

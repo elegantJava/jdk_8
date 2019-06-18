@@ -1,14 +1,15 @@
 package com.wangz.jdk_8.functional;
 
-/**
+/*
  * 函数式接口：有且仅有一个抽象方法，
  * 但可以有多个非抽象方法的接口（需要 default 关键字修饰, 或写成 static 方法）
  * 可以被隐式转换为 lambda 表达式
  */
-@FunctionalInterface// 该注解可以不加，主要用于编译级错误检查
+/** 该注解可以不加，主要用于编译级错误检查 */
+@FunctionalInterface
 public interface FunctionalInterfaceService {
 
-    // 有且仅有一个抽象方法
+    /**有且仅有一个抽象方法*/
     void abstractFunc();
 
     /**
@@ -19,7 +20,7 @@ public interface FunctionalInterfaceService {
     default void concreteFunc1(){
         System.out.println("this is a concreteFunc1~");
     }
-
+    /**默认方法*/
     default void concreteFunc2(){
         System.out.println("this is a concreteFunc2~");
     }
